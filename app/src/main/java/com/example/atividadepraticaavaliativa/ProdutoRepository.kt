@@ -1,4 +1,9 @@
 package com.example.atividadepraticaavaliativa
 
-class ProdutoRepository {
+object ProdutoRepository {
+    val listaDeProdutos = mutableListOf<Produto>()
+
+    fun addProduto(produto: Produto) {
+        listaDeProdutos.add(produto)
+    }
 }
